@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'DashboardController::index');
-$routes->get('barang', 'BarangController::index');
+$routes->get('/barang', 'BarangController::index');
 $routes->post('/tambahbarang', 'BarangController::tambah');
 
 /*
