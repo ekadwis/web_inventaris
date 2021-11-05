@@ -1,0 +1,130 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.navbar {
+  padding: 15px 10px;
+  background: #223767;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none;
+}
+
+.btn-toggler {
+  color: #325499;
+  font-size: 1.2em;
+}
+.btn-toggler:hover {
+  color: #4166b1;
+  font-size: 1.2em;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.nav-link {
+  color: #325499;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #152042;
+  color: #4d75c0;
+  transition: all 0.3s;
+}
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  color: #ffd43b;
+}
+
+#sidebar ul p {
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a {
+  font-size: 1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: #a7b8cc;
+  background: #223767;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #a7b8cc;
+  background: #223767;
+}
+a[data-toggle="collapse"] {
+  position: relative;
+}
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 1em !important;
+  background: #223767;
+}
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.3s;
+  background-color: #1b2b54;
+}
+
+@media (maz-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0px;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
