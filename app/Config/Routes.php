@@ -34,7 +34,8 @@ $routes->setAutoRoute(true);
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'DashboardController::index');
 $routes->get('/barang', 'BarangController::index');
-$routes->post('/tambahbarang', 'BarangController::tambah');
+$routes->get('/barang/tambah', 'BarangController::tambah');
+$routes->post('/tambahbarang', 'BarangController::tambahbarang');
 
 /*
  * --------------------------------------------------------------------

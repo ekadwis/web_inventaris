@@ -14,7 +14,7 @@ class BarangModel extends Model
     protected $returnType           = 'array';
     protected $useSoftDeletes       = false;
     protected $protectFields        = true;
-    protected $allowedFields        = ['nama_barang', 'spesifikasi', 'lokasi', 'kondisi', 'jumlah_barang', 'sumber_dana'];
+    protected $allowedFields        = ['id_barang', 'nama_barang', 'spesifikasi', 'lokasi', 'kondisi', 'jumlah_barang', 'sumber_dana'];
 
     // Dates
     protected $useTimestamps        = false;
@@ -39,4 +39,13 @@ class BarangModel extends Model
     protected $afterFind            = [];
     protected $beforeDelete         = [];
     protected $afterDelete          = [];
+
+    // public function generateID()
+    // {
+    //     $db = \Config\Database::connect();
+
+    //     $new_idbarang = $db->callFunction('newkodebarang');
+
+    //     return $new_idbarang;
+    // }
 }

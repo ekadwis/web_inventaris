@@ -20,36 +20,36 @@
                 <div class="modal-body">
                     <div class="mb-3">
                         <label for="id_barang" class="form-label">ID Barang</label>
-                        <input type="text" class="form-control" id="id_barang" aria-describedby="emailHelp" name="id_barang" autofocus>
+                        <input type="text" class="form-control" id="id_barang" aria-describedby="emailHelp" name="id_barang" autofocus value="<?= $id_barang; ?>" readonly>
                     </div>
 
                     <div class="mb-3">
                         <label for="nama_barang" class="form-label">Nama Barang</label>
-                        <input type="text" class="form-control" id="nama_barang" aria-describedby="emailHelp" name="nama_barang" autofocus>
+                        <input type="text" class="form-control" id="nama_barang" aria-describedby="emailHelp" name="nama_barang">
                     </div>
                     <div class="mb-3">
                         <label for="spesifikasi" class="form-label">Spesifikasi</label>
-                        <input type="text" class="form-control" id="spesifikasi" aria-describedby="emailHelp" name="spesifikasi" autofocus>
+                        <input type="text" class="form-control" id="spesifikasi" aria-describedby="emailHelp" name="spesifikasi">
                     </div>
                     <div class="mb-3">
                         <label for="lokasi" class="form-label">Lokasi</label>
-                        <input type="text" class="form-control" id="lokasi" aria-describedby="emailHelp" name="lokasi" autofocus>
+                        <input type="text" class="form-control" id="lokasi" aria-describedby="emailHelp" name="lokasi">
                     </div>
                     <div class="mb-3">
                         <label for="kondisi" class="form-label">Kondisi</label>
-                        <input type="text" class="form-control" id="kondisi" aria-describedby="emailHelp" name="kondisi" autofocus>
+                        <input type="text" class="form-control" id="kondisi" aria-describedby="emailHelp" name="kondisi">
                     </div>
                     <div class="mb-3">
                         <label for="jumlah_barang" class="form-label">Jumlah Barang</label>
-                        <input type="text" class="form-control" id="jumlah_barang" aria-describedby="emailHelp" name="jumlah_barang" autofocus>
+                        <input type="text" class="form-control" id="jumlah_barang" aria-describedby="emailHelp" name="jumlah_barang">
                     </div>
                     <div class="mb-3">
                         <label for="sumber_dana" class="form-label">Sumber Dana</label>
-                        <input type="text" class="form-control" id="sumber_dana" aria-describedby="emailHelp" name="sumber_dana" autofocus>
+                        <input type="text" class="form-control" id="sumber_dana" aria-describedby="emailHelp" name="sumber_dana">
                     </div>
                     <div class="mb-3">
                         <label for="image" class="form-label">Image</label>
-                        <input type="text" class="form-control" id="image" aria-describedby="emailHelp" name="image" autofocus>
+                        <input type="text" class="form-control" id="image" aria-describedby="emailHelp" name="image">
                     </div>
 
                 </div>
