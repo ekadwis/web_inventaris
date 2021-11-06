@@ -48,4 +48,15 @@ class BarangController extends BaseController
 
         return redirect()->to('/');
     }
+
+    public function hapus($id = null)
+    {
+        $hapus = $this->BarangModel->where(array('id_barang' => $id))->delete();
+
+        if ($hapus) :
+            return redirect()->to('/barang');
+        else :
+
+        endif;
+    }
 }

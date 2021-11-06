@@ -36,6 +36,7 @@ $routes->get('/', 'DashboardController::index');
 $routes->get('/barang', 'BarangController::index');
 $routes->get('/barang/tambah', 'BarangController::tambah');
 $routes->post('/tambahbarang', 'BarangController::tambahbarang');
+$routes->get('/hapus/(:any)', 'BarangController::hapus/$1');
 
 /*
  * --------------------------------------------------------------------

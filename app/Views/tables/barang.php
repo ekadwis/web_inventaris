@@ -88,7 +88,7 @@
                     </div>
                     <div class="card-body col">
                         <div class="float-end">
-                            <a href="#" class="card-link">
+                            <a href="/hapus/<?= $b['id_barang']; ?>" class="card-link">
                                 <i class="fas fa-trash text-danger" title="delete"></i>
                             </a>
                             <a href="#" class="card-link">
