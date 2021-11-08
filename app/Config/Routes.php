@@ -37,6 +37,8 @@ $routes->get('/barang', 'BarangController::index');
 $routes->get('/barang/tambah', 'BarangController::tambah');
 $routes->post('/tambahbarang', 'BarangController::tambahbarang');
 $routes->get('/hapus/(:any)', 'BarangController::hapus/$1');
+$routes->get('/edit/(:any)', 'BarangController::edit/$1');
+$routes->post('/save', 'BarangController::save');
 
 /*
  * --------------------------------------------------------------------

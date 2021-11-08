@@ -8,7 +8,7 @@
 
 <!-- Modal -->
 <!-- Form tambah barang -->
-<form action="/tambahbarang" method="POST">
+<form action="/tambahbarang" method="POST" enctype="multipart/form-data">
     <?= csrf_field(); ?>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -48,8 +48,8 @@
                         <input type="text" class="form-control" id="sumber_dana" aria-describedby="emailHelp" name="sumber_dana">
                     </div>
                     <div class="mb-3">
-                        <label for="image" class="form-label">Image</label>
-                        <input type="text" class="form-control" id="image" aria-describedby="emailHelp" name="image">
+                        <label for="gambar" class="form-label">Gambar</label>
+                        <input type="file" class="form-control" id="gambar" aria-describedby="emailHelp" name="gambar">
                     </div>
 
                 </div>
@@ -76,12 +76,12 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="card mx-3 my-2" style="width: 18rem;">
-                    <img src="/img/<?= $b['image']; ?>.png" class="card-img-top img-thumbnail">
+                    <img src="/img/<?= $b['image']; ?>" class="card-img-top img-thumbnail img-size">
                     <div class="card-body">
                         <h4 class="fs-6 text-secondary float-end"><?= $b['lokasi']; ?></h4>
-                        <h5 class="card-title"><?= $b['nama_barang']; ?></h5>
+                        <h5 class="card-title nama-barang"><?= $b['nama_barang']; ?></h5>
 
-                        <p class="card-text fs-6">
+                        <p class="card-text fs-6 spek">
                             <?= $b['nama_barang']; ?> dengan kondisi <?= $b['kondisi']; ?> dengan bahan/spesifikasi yaitu:
                             <?= $b['spesifikasi']; ?>
                         </p>
@@ -91,9 +91,10 @@
                             <a href="/hapus/<?= $b['id_barang']; ?>" class="card-link">
                                 <i class="fas fa-trash text-danger" title="delete"></i>
                             </a>
-                            <a href="#" class="card-link">
+                            <a href="/edit/<?= $b['id_barang']; ?>" class="card-link">
                                 <i class="fas fa-edit text-dark" title="edit"></i>
                             </a>
+
                         </div>
                         <p class="card-text fs-6">
                             Stok: <?= $b['jumlah_barang']; ?>

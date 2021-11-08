@@ -117,6 +117,18 @@ a.article:hover {
   background-color: #1b2b54;
 }
 
+.img-size {
+  height: 200px;
+}
+
+.spek {
+  height: 100px;
+}
+
+.nama-barang {
+  height: 50px;
+}
+
 @media (maz-width: 768px) {
   #sidebar {
     margin-left: -250px;
