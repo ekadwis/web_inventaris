@@ -107,4 +107,9 @@
         </div>
     <?php endforeach; ?>
 </div>
+
+<!-- parameternya adalah ('nama_tabel', 'nama_pagination') -->
+<?= $pager->links('barang', 'barang_pagination'); ?>
+
+
 <?= $this->endSection(); ?>

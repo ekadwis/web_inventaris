@@ -22,7 +22,8 @@ class BarangController extends BaseController
         foreach ($id as $idnew) // nggk tau knp harus di foreach dulu
 
             $data = [
-                'barang' => $this->BarangModel->findAll(), // ambil semua data yang ada di BarangModel
+                'barang' => $this->BarangModel->paginate(6, 'barang'), // tampilkan hanya 6 data per halaman, parameter barang adalah nama groupnya(namanya bebas)
+                'pager' => $this->BarangModel->pager,
                 'id_barang' => $idnew // ambil data yang sudah di foreach tadi
             ];
 
