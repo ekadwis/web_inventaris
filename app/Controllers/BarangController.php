@@ -2,12 +2,15 @@
 
 namespace App\Controllers;
 
+use App\Models\LokasiModel;
 use App\Models\BarangModel;
 use App\Controllers\BaseController;
 
 class BarangController extends BaseController
 {
     protected $BarangModel;
+    protected $LokasiModel;
+
     public function __construct()
     {
         $this->BarangModel = new BarangModel();
@@ -32,6 +35,7 @@ class BarangController extends BaseController
 
     public function tambahbarang()
     {
+
         $gambar = $this->request->getFile('gambar'); // ambil inputan gambar
         if ($gambar->getError() == 4) : // jika terdapat error di gambar
             $namabaru = 'default.jpg'; // gunakan gambar default.jpg

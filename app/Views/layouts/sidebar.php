@@ -15,7 +15,7 @@
                         <a href="/barang" class="ps-5 py-2">Barang</a>
                     </li>
                     <li>
-                        <a href="#" class="ps-5 py-2">Stok</a>
+                        <a href="/barangmasuk" class="ps-5 py-2">Barang Masuk</a>
                     </li>
                 </ul>
             </li>

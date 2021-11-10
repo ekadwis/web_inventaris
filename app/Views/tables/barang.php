@@ -33,7 +33,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="lokasi" class="form-label">Lokasi</label>
-                        <input type="text" class="form-control" id="lokasi" aria-describedby="emailHelp" name="lokasi">
+                        <select class="form-select" aria-label="Default select example" name="lokasi">
+                            <option selected value="R001">Lab RPL 1</option>
+                            <option value="R002">Lab RPL 2</option>
+                            <option value="R003">Lab TKJ 1</option>
+                            <option value="R004">Lab TKJ 2</option>
+                            <option value="R005">Lab Multimedia</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="kondisi" class="form-label">Kondisi</label>
@@ -45,7 +51,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="sumber_dana" class="form-label">Sumber Dana</label>
-                        <input type="text" class="form-control" id="sumber_dana" aria-describedby="emailHelp" name="sumber_dana">
+                        <select class="form-select" aria-label="Default select example" name="sumber_dana">
+                            <option selected value="S001">Komite 07/09</option>
+                            <option value="S002">Komite 13</option>
+                            <option value="S003">Sed t-vet</option>
+                            <option value="S004">BOPD 2020</option>
+                            <option value="S005">BOSDA 2018</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="gambar" class="form-label">Gambar</label>
